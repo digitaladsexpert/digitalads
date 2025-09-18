@@ -1,59 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Join Free Learning Community</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forex Market Insights — Join Telegram</title>
   <style>
+    :root {
+      --bg:#f5f9ff;
+      --card:#ffffff;
+      --accent:#0052cc;
+      --accent-dark:#003d99;
+      --text:#111111;
+    }
     body {
       margin:0;
-      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
-      background: linear-gradient(180deg,#000,#07101a);
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      height:100vh;
+      font-family:Arial,Helvetica,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+    .container {
+      max-width:600px;
+      margin:0 auto;
+      padding:20px;
     }
     .card {
-      max-width:520px;
-      padding:28px;
+      background:var(--card);
       border-radius:16px;
+      padding:25px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.08);
       text-align:center;
-      background:rgba(255,255,255,0.05);
-      box-shadow:0 4px 24px rgba(0,0,0,0.5);
+      animation:fadeIn 1s ease-in-out;
     }
-    .cta {
+    h1 {
+      font-size:1.8rem;
+      color:var(--accent-dark);
+    }
+    p {
+      font-size:1rem;
+      line-height:1.5;
+      margin:15px 0;
+    }
+    .cta-btn {
       display:inline-block;
-      margin:20px;
-      padding:14px 20px;
-      background:#1c9fe7;
+      margin-top:20px;
+      padding:14px 28px;
+      background:var(--accent);
       color:#fff;
-      font-weight:700;
-      border-radius:10px;
+      border-radius:30px;
       text-decoration:none;
-      box-shadow:0 6px 16px rgba(28,159,231,0.5);
-      transition:transform 0.2s;
+      font-weight:bold;
+      transition:0.3s;
+      animation:pulse 2s infinite;
     }
-    .cta:hover {
-      transform:scale(1.05);
+    .cta-btn:hover {
+      background:var(--accent-dark);
     }
-    .note {
-      color:#bfc9d4;
-      font-size:14px;
+    .highlight {
+      background: #e6f0ff;
+      padding:10px;
+      border-radius:10px;
+      margin-top:15px;
+    }
+    .disclaimer {
+      margin-top:25px;
+      font-size:0.8rem;
+      color:#555;
+      line-height:1.4;
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+    @keyframes pulse {
+      0% { box-shadow:0 0 0 0 rgba(0,82,204,0.5); }
+      70% { box-shadow:0 0 0 15px rgba(0,82,204,0); }
+      100% { box-shadow:0 0 0 0 rgba(0,82,204,0); }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Free Learning Community</h1>
-    <p class="note">Join our free stock market learning community. Educational purpose only.</p>
-    <a class="cta" href="https://t.me/YourChannel" target="_blank" rel="noopener">
-      Join on Telegram
-    </a>
-    <p style="color:#97a6b8;font-size:12px;margin-top:12px">
-      Disclaimer: Educational only. Not financial advice.
-    </p>
+  <div class="container">
+    <div class="card">
+      <h1>📊 Forex Market Insights</h1>
+      <p>Daily updates, global market trends aur expert analysis ek hi jagah.<br>
+      Stay ahead with real-time insights directly on Telegram.</p>
+
+      <div class="highlight">
+        ✅ Live Market Alerts <br>
+        ✅ Learning-Oriented Updates <br>
+        ✅ Community Discussions
+      </div>
+
+      <a href="https://t.me/yourchannel" class="cta-btn">🚀 Join Free on Telegram</a>
+
+      <div class="disclaimer">
+        ⚠ Disclaimer: This channel is for educational & informational purposes only.  
+        We do not provide investment or financial advice. Trading in financial markets involves risk — always do your own research.
+      </div>
+    </div>
   </div>
 </body>
 </html>
